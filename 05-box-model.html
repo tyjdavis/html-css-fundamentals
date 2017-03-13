@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8" /> 
+    <title>Box Model</title>
+    <style>
+      * {
+        border: 1px solid black;
+        background: rgba(100, 100, 240, 0.2);
+        padding: 20px;
+        margin: 30px;
+      }
+      /*em {
+        border: 0;
+        padding: 0;
+        margin: 0;
+      }*/
+    </style>
+  </head>
+  <body>
+    <h1>The Box Model</h1>
+    <p>HTML elements are rendered by a browser as a set of boxes.</p>
+    <h2>Content Box</h2>
+    <p>The innermost box is known as the <em>content box.</em> That's the part that actually contains content, like text.</p>
+    <h2>Padding</h2>
+    <p>The content box is surrounded by <em>padding.</em> Any background styling applied to an element is applied to both the content box and the padding around it.</p>
+    <h2>Border</h2>
+    <p>The <em>border</em> is a shape (usually rectangular and thin) around an element's padding (or around the content box if the element has no padding).</p>
+    <h2>Margin</h2>
+    <p>An element's <em>margin</em> is the box that separates the element from other elements.</p>
+    <h3>Side&ndash;Specific Values</h3>
+    <p>Each of the three box model properties (padding, border, and margin) can be set to have a consistent value on every side of the box, or they can be set one side at a time. For example:</p>
+    <ul>
+      <li><code>margin-top</code></li>
+      <li><code>padding-left</code></li>
+      <li><code>border-bottom</code></li>
+    </ul>
+    <h3>Shortcuts</h3>
+    <p>While using the side&ndash;specific values allows a developer to set each side individually, they are verbose. It is common to use shortcuts to specify values for each side. If multiple values are associated with a single box model property, the first value is for the top, then the right, bottom, and left. If only two values are specified, the first will be applied to the top and bottom, and the second to the right and left.</p>
+  </body>
+</html>

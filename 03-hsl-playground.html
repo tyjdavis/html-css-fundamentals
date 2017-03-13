@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8" /> 
+    <title>Play with Colors</title>
+    <style>
+      h1 {
+        color: hsl(49, 100%, 83%);
+        background: hsl(222, 24%, 57%);
+        border: 3px solid hsl(222, 81%, 12%);
+      }
+      div {
+        height: 500px;
+        width: 500px;
+        border: 1px solid black;
+      }
+      label {
+        display: block;
+      }
+      span {
+        display: inline-block;
+        width: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <label>
+      Hue: <span id="hueValue">0</span>
+      <input type="range" id="hue" value=0 max=360 />
+    </label>
+    <label>
+      Saturation: <span id="satValue">0</span>
+      <input type="range" id="saturation" value=0 />
+    </label>
+    <label>
+      Lightness: <span id="lightValue">100</span>
+      <input type="range" id="lightness" value=100 />
+    </label>
+  <script src="./colorConversions.js" type="text/javascript"></script>
+  <script>
+    function changeColor () {
+      let normalizedHue = hue.value / 360
+      let normalizedSat = sat.value / 100
+      let normalizedLight = light.value / 100
+      let [r, g, b]= hslToRgb(normalizedHue, normalizedSat, normalizedLight)
+      div.style.setProperty('background-color', `rgb(${r}, ${g}, ${b})`)
+      
+      document.querySelector("#hueValue").innerText = hue.value
+      document.querySelector("#satValue").innerText = sat.value
+      document.querySelector("#lightValue").innerText = light.value
+    }
+    
+    let hue = document.querySelector("#hue")
+    let sat = document.querySelector("#saturation")
+    let light = document.querySelector("#lightness")
+    let div = document.querySelector("div")
+
+    hue.addEventListener('input', changeColor)
+    sat.addEventListener('input', changeColor)
+    light.addEventListener('input', changeColor)
+     
+  </script>
+  </body>
+</html>
