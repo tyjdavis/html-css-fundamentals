@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8" /> 
+    <title>Units</title>
+    <style>
+      html {
+        background: #ccc;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: white;
+        width: 800px;
+        margin: 0 auto;
+        padding: 1em;
+        /* font-size: 16px; */
+        /* font-size: 1em; */
+        /* font-size: 0.5em; */
+        /* font-size: calc(8em/16); */
+        /*padding: 1rem; */
+        /*height: 100%;*/
+        /* height: 100vh; */
+      }
+      h1 {
+        margin: 0;
+        /*width: 50%;*/
+        border: 1px solid black;
+        padding: 1em 0;
+        /*padding: 1rem 0; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Units</h1>
+    <p>This page starts out with a font size of 16px for text in the body, such as in this paragraph tag. You can confirm that by looking in the <code>Computed</code> tab in the <code>Elements</code> tab in Developer Tools. (Be sure the 'show all' filter has been checked.)</p>
+    <p>The font size is inherited from the html element, but I was surprised to learn that it's not part of the user agent stylesheet settings for that element. In fact, the font size is controlled through the browser by entering <code>chrome://settings/</code> in the address bar. That is so users can customize the base font size for all web pages, to accomodate visually impaired users &emdash; or, I suppose, users who just like to read really large (or really small) print.</p>
+    <h2>Ems vs px</h2>
+    <p>A pixel is a fixed size for a particular screen. For instance, my MacBook Air is 1440x900px, which I confirmed by looking under the Apple logo for <code>About This Mac &gt; Displays</code>. An equally common unit in web design is the <em>em</em>. An em is the font size that an element has, which is either inherited from its parent or set on the element itself. For instance, the body element by default inherits the font size of 16px that the html element has by default, so for the body element, 1em is 16px. The padding on the body has been styled to equal 1em, and you can see in the box model diagram in the style tab of Developer Tools that the padding on the body is 16px. Change the font size of the body and check what happens to the padding.</p>
+    <h2>Ems vs rems</h2>
+    <p>The nice thing about ems is that they are relative. An element with padding, margin, or width specified in ems can have its font size changed, and the padding etc will automatically be changed to match. The problem with ems is that they compound: if an element's font size is set in ems, and its parent or more distant ancestor gets a new font size, the element will change too. The newer rem unit solves this problem, by being relative <em>to the root element (html).</em></p>
+  </body>
+</html>
+

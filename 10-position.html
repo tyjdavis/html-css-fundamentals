@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8" /> 
+    <title>Position</title>
+    <style>
+      html {
+        background: #ccc;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: white;
+        width: 800px;
+        margin: 0 auto;
+        padding: 1em;
+      }
+      h1 {
+        margin: 0;
+        padding: 1em 0;
+      }
+      .outer {
+        height: 500px;
+        width: 500px;
+        background: blue;
+      }
+      .outer p {
+        color: white;
+      }
+      .inner {
+        height: 100px;
+        width: 100px; 
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Positioning</h1>
+    <div class="outer">
+      <div class="inner"></div>
+      <p>Here is some text inside a blue box.</p>
+    </div>
+    <h2>Things to Try:</h2>
+    <ul>
+      <li>.inner {position: relative; left: 10px}</li>
+      <li>.inner {position: relative; right: 10px}</li>
+      <li>.inner {position: relative; right: -10px}</li>
+      <li>.inner {position: relative; top: 10px}</li>
+      <li>.inner {position: absolute; top: 10px}</li>
+      <li>.outer {position: relative} .inner {position: absolute; top: 10px}</li>
+      <li>.outer {position: relative} .inner {position: absolute; top: 10px; bottom: 20px;} (and unset the height on .inner)</li>
+      <li>.outer {position: relative} .inner {position: relative; top: 10px}</li>
+    </ul>
+  </body>
+</html>

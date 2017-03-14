@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8" /> 
+    <title>Display</title>
+    <style>
+      html {
+        background: #ccc;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: white;
+        width: 800px;
+        margin: 0 auto;
+        padding: 1em;
+      }
+      h1 {
+        margin: 0;
+        /*width: 50%;*/
+        border: 1px solid black;
+        padding: 1em 0;
+        /*box-sizing: border-box;*/
+      }
+      .inline {
+        /* padding: 0;*/
+      }
+      .inline li {
+        display: inline;
+        /* width: 33%;*/
+        /*display: inline-block;*/
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Block vs Inline</h1>
+    <p>Here is a list:</p>
+    <ul>
+      <li>uno</li>
+      <li>dos</li>
+      <li>three</li>
+    </ul>
+    <p>Here is a list styled to display <em>inline</em>:</p>
+    <ul class="inline">
+      <li>eins</li>
+      <li>zwei</li>
+      <li>bier</li>
+    </ul>
+  </body>
+</html>
