@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8" /> 
+    <title>Effects and Transitions</title>
+    <style>
+      html {
+        background: #ccc;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: white;
+        width: 800px;
+        margin: 0 auto;
+        padding: 1em;
+      }
+      h1 {
+        margin: 0;
+        padding: 1em 0;
+      }
+      .outer {
+        height: 500px;
+        width: 500px;
+        background: blue;
+      }
+      .outer p {
+        color: white;
+      }
+      .inner {
+        height: 100px;
+        width: 100px; 
+        background: red;
+      }
+      .inner:hover {
+        background: green;
+        /* height: 150px; */
+        /* width: 150px; */
+        /* opacity: 0.75; */
+        /*transform: rotate(45deg);*/
+        /*transition: opacity 3s, height 2s, width 2s, transform 1s;*/
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Effects</h1>
+    <div class="outer">
+      <div class="inner"></div>
+      <p>Here is some text inside a blue box.</p>
+    </div>
+  </body>
+</html>
