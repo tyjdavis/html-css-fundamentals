@@ -1,0 +1,113 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8" /> 
+    <title>Align Items</title>
+    <style>
+      html {
+        background: #ccc;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: white;
+        width: 960px;
+        margin: 0 auto;
+        padding: 1rem;
+      }
+      h1 {
+        margin: 0;
+        padding: 1rem 0;
+      }
+      .container {
+        display: flex;
+        background: blue;
+        margin: 1rem;
+      }
+      .container p {
+        color: white;
+      }
+      .item {
+        width: 100px; 
+        background: green;
+        margin: 1rem;
+        font-size: 3rem;
+        color: white;
+      }
+      .item:nth-child(1) {
+        height: 50px;
+      }
+      .item:nth-child(2) {
+        height: 100px;
+      }
+      .item:nth-child(3) {
+        height: 150px;
+      }
+      .item:nth-child(4) {
+        height: 100px;
+      }
+      .start {
+       align-items: flex-start;
+      }
+      .end {
+        align-items: flex-end;
+      }
+      .center {
+        align-items: center;
+      }
+      .stretch {
+        align-items: stretch;
+        height: 300px;
+      }
+      .stretch .item {
+        height: auto;
+      }
+      .baseline {
+        align-items: baseline;
+      }
+      .baseline .item:nth-child(2) {
+        padding-top: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox: Align-Items</h1>
+    <img src="https://media.giphy.com/media/3oEduVI94O3u3Q9ZXG/giphy.gif"/>
+    <img src="https://media.giphy.com/media/IZtkzVqZeHwU8/giphy.gif"/>
+    <h2>flex-start</h2>
+    <div class="container start">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+    <h2>flex-end</h2>
+    <div class="container end">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+    <h2>center</h2>
+    <div class="container center">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+    <h2>stretch</h2>
+    <div class="container stretch">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+    <h2>baseline</h2>
+    <div class="container baseline">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+  </body>
+</html>

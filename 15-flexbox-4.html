@@ -1,0 +1,207 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8" /> 
+    <title>Flexbox!</title>
+    <style>
+      html {
+        background: #ccc;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: white;
+        width: 960px;
+        margin: 0 auto;
+        padding: 1rem;
+      }
+      img {
+        width: 48%;
+      }
+      h1 {
+        margin: 0;
+        padding: 1rem 0;
+      }
+      .container {
+        display: flex;
+        background: blue;
+        margin: 1rem;
+        height: 400px;
+        flex-wrap: wrap; /*this is needed for align-content to work!*/
+      }
+      .container p {
+        color: white;
+      }
+      .item {
+        height: 100px;
+        width: 100px; 
+        background: green;
+        margin: 1rem;
+        font-size: 3rem;
+        color: white;
+      }
+      .flex-start {
+        align-content: flex-start;
+      }
+      .flex-end {
+        align-content: flex-end;
+      }
+      .center {
+        align-content: center;
+      }
+      .stretch {
+        align-content: stretch;
+      }
+      .space-between {
+        align-content: space-between;
+      }
+      .space-around {
+        align-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox: Align-Content</h1>
+    <h2>It's Neither Justify-Content, nor Align-Items</h2>
+
+    <img src="https://media.giphy.com/media/1425Phl57E2cak/giphy.gif"/>+<img src="https://media.giphy.com/media/8Eup943BRqxbO/giphy.gif"/>
+    <h2>start</h2>
+    <div class="container flex-start">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item">12</div>
+      <div class="item">13</div>
+      <div class="item">14</div>
+      <div class="item">15</div>
+      <div class="item">16</div>
+      <div class="item">17</div>
+      <div class="item">18</div>
+      <div class="item">19</div>
+      <div class="item">20</div>
+    </div>
+    <h2>end</h2>
+    <div class="container flex-end">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item">12</div>
+      <div class="item">13</div>
+      <div class="item">14</div>
+      <div class="item">15</div>
+      <div class="item">16</div>
+      <div class="item">17</div>
+      <div class="item">18</div>
+      <div class="item">19</div>
+      <div class="item">20</div>
+    </div>
+    <h2>center</h2>
+    <div class="container center">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item">12</div>
+      <div class="item">13</div>
+      <div class="item">14</div>
+      <div class="item">15</div>
+      <div class="item">16</div>
+      <div class="item">17</div>
+      <div class="item">18</div>
+      <div class="item">19</div>
+      <div class="item">20</div>
+    </div>
+    <h2>stretch</h2>
+    <div class="container stretch">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item">12</div>
+      <div class="item">13</div>
+      <div class="item">14</div>
+      <div class="item">15</div>
+      <div class="item">16</div>
+      <div class="item">17</div>
+      <div class="item">18</div>
+      <div class="item">19</div>
+      <div class="item">20</div>
+    </div>
+    <h2>space-between</h2>
+    <div class="container space-between">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item">12</div>
+      <div class="item">13</div>
+      <div class="item">14</div>
+      <div class="item">15</div>
+      <div class="item">16</div>
+      <div class="item">17</div>
+      <div class="item">18</div>
+      <div class="item">19</div>
+      <div class="item">20</div>
+    </div>
+    <h2>space-around</h2>
+    <div class="container space-around">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item">12</div>
+      <div class="item">13</div>
+      <div class="item">14</div>
+      <div class="item">15</div>
+      <div class="item">16</div>
+      <div class="item">17</div>
+      <div class="item">18</div>
+      <div class="item">19</div>
+      <div class="item">20</div>
+    </div>
+  </body>
+</html>

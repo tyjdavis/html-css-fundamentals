@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" /> 
-    <title>Flexbox!</title>
+    <title>Justify Content</title>
     <style>
       html {
         background: #ccc;
@@ -14,9 +14,6 @@
         width: 960px;
         margin: 0 auto;
         padding: 1rem;
-      }
-      img {
-        width: 48%;
       }
       h1 {
         margin: 0;
@@ -38,58 +35,61 @@
         font-size: 3rem;
         color: white;
       }
-      .col {
-        flex-direction: column;
-        /*flex-direction: row-reverse;*/
-        /*flex-direction: column-reverse;*/
+      .start {
+        justify-content: flex-start;
       }
-      .wrap {
-        flex-wrap: wrap;
-        /*flex-wrap: wrap-reverse;*/
+      .end {
+        justify-content: flex-end;
+      }
+      .center {
+        justify-content: center;
+      }
+      .between {
+        justify-content: space-between;
+      }
+      .around {
+        justify-content: space-around;
       }
     </style>
   </head>
   <body>
-    <h1>Flexbox</h1>
-    <img src="https://media.giphy.com/media/BCIoXfA95d1ba/giphy.gif"/>+<img src="https://media.giphy.com/media/jbUX8hH1BwrBK/giphy.gif"/>
-    <div class="container">
+    <h1>Flexbox: Justify-Content</h1>
+    <img src="https://media.giphy.com/media/PFNN9SAJVRYZ2/giphy.gif"/>
+    <img src="https://media.giphy.com/media/utNbq8hMRng7S/giphy.gif"/>
+    <h2>flex-start</h2>
+    <div class="container start">
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
       <div class="item">4</div>
-      <p>Here is some text inside a blue box.</p>
     </div>
-    <h2>flex-direction: column</h2>
-    <div class="container col">
-      <div class="item">1</div>
-      <div class="item">2</div>
-      <div class="item">3</div>
-    </div>
-    <h2>flex-wrap: nowrap (default)</h2>
-    <div class="container">
+    <h2>flex-end</h2>
+    <div class="container end">
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
       <div class="item">4</div>
-      <div class="item">5</div>
-      <div class="item">6</div>
-      <div class="item">7</div>
-      <div class="item">8</div>
-      <div class="item">9</div>
-      <div class="item">10</div>
     </div>
-    <h2>flex-wrap: wrap</h2>
-    <div class="container wrap">
+    <h2>center</h2>
+    <div class="container center">
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
       <div class="item">4</div>
-      <div class="item">5</div>
-      <div class="item">6</div>
-      <div class="item">7</div>
-      <div class="item">8</div>
-      <div class="item">9</div>
-      <div class="item">10</div>
+    </div>
+    <h2>space-between</h2>
+    <div class="container between">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+    <h2>space-around</h2>
+    <div class="container around">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
     </div>
   </body>
 </html>
