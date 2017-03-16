@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8" /> 
+    <title>Flexbox!</title>
+    <style>
+      html {
+        background: #ccc;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: white;
+        width: 960px;
+        margin: 0 auto;
+        padding: 1rem;
+      }
+      img {
+        width: 48%;
+      }
+      h1 {
+        margin: 0;
+        padding: 1rem 0;
+      }
+      .container {
+        display: flex;
+        background: blue;
+        margin: 1rem;
+      }
+      .container p {
+        color: white;
+      }
+      .item {
+        height: 100px;
+        width: 100px; 
+        background: green;
+        margin: 1rem;
+        font-size: 3rem;
+        color: white;
+      }
+      .col {
+        flex-direction: column;
+        /*flex-direction: row-reverse;*/
+        /*flex-direction: column-reverse;*/
+      }
+      .wrap {
+        flex-wrap: wrap;
+        /*flex-wrap: wrap-reverse;*/
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox</h1>
+    <img src="https://media.giphy.com/media/BCIoXfA95d1ba/giphy.gif"/>+<img src="https://media.giphy.com/media/jbUX8hH1BwrBK/giphy.gif"/>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <p>Here is some text inside a blue box.</p>
+    </div>
+    <h2>flex-direction: column</h2>
+    <div class="container col">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+    <h2>flex-wrap: nowrap (default)</h2>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+    </div>
+    <h2>flex-wrap: wrap</h2>
+    <div class="container wrap">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+    </div>
+  </body>
+</html>

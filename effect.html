@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Effect Test</title>
+    <style>
+      html {
+        background: #ccc;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: white;
+        width: 800px;
+        margin: 0 auto;
+        padding: 1em;
+      }
+      h1 {
+        margin: 0;
+        padding: 1em 0;
+      }
+      .outer {
+        margin: auto;
+        height: 500px;
+        width: 700px;
+        background: red;
+      }
+      .outer p {
+        color: white;
+      }
+      .inner {
+        position: relative;
+        margin: auto;
+        top: 220px;
+        height: 100px;
+        width: 100px;
+        background: white;
+        border-radius: 50%;
+        transition: height 2s, width 2s, transform 1s;
+      }
+      .inner:hover {
+        background: white;
+        height: 150px;
+        width: 150px;
+        /* opacity: 0.75; */
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Effect Test</h1>
+    <div class="outer">
+      <div class="inner">Watch me grow!</div>
+    </div>
+  </body>
+</html>
