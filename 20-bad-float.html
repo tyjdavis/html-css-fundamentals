@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8" /> 
+    <title>Floats (The Good Parts)</title>
+    <style>
+      html {
+        background: #ccc;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: white;
+        width: 800px;
+        margin: 0 auto;
+        padding: 1em;
+      }
+      h1 {
+        margin: 0;
+        padding: 1em 0;
+      }
+      main {
+        background: pink;
+      }
+      .left {
+        float: left;
+      }
+      section {
+        width: 75%;
+      }
+      .clear {
+        clear: both;
+      }
+      aside {
+        border: 1px solid black;
+        background: white;
+        /*width: 25%;*/
+        /*float: left;*/
+      }
+      footer {
+        border: 1px solid black;
+      }
+      main:after { 
+        /*content: "."; */
+        /*visibility: hidden; */
+        /*display: block; */
+        /*height: 0; */
+        /*clear: both;*/
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Floated Layout</h1>
+      <section class="left">
+        <h2>Main Content</h2>
+      <p>Spicy jalapeno bacon ipsum dolor amet boudin strip steak tri-tip prosciutto tongue pork belly pancetta swine tail kevin andouille. Tail sausage pork, flank shoulder burgdoggen capicola turkey tri-tip doner ground round kevin tongue. Meatloaf capicola sirloin, jerky cupim brisket doner ball tip ribeye fatback tenderloin ham swine tri-tip leberkas. Pastrami kielbasa tri-tip beef andouille frankfurter picanha ball tip corned beef pork sausage.</p>
+
+      <p>Bacon biltong ground round, bresaola pig pork chop strip steak chicken tongue spare ribs venison doner boudin. Bacon beef ribs brisket ham. Capicola tongue cow short ribs prosciutto jerky. Bacon salami beef ribs meatball, shankle porchetta ham hock meatloaf swine short ribs pork chop. </p>
+
+      <p>Landjaeger tri-tip bacon fatback, prosciutto turducken ball tip biltong hamburger doner spare ribs. Ribeye meatball kevin chicken capicola doner. Doner filet mignon bresaola, turkey beef ribs biltong hamburger alcatra. Venison ball tip porchetta shankle ham hock cupim boudin pig pancetta corned beef sirloin prosciutto picanha. Pork loin jowl meatloaf tongue cupim landjaeger kevin prosciutto strip steak pancetta. Rump beef biltong pork belly swine sirloin shoulder sausage.</p>
+      </section>
+
+      <aside>
+      <h2>Sidebar</h2>
+      <p>Burgdoggen venison frankfurter sirloin brisket prosciutto picanha cupim. Pork chop meatloaf beef ribs, flank swine kielbasa fatback. Shank leberkas filet mignon strip steak, pork short ribs ground round turducken meatball doner bresaola. Fatback biltong swine bacon ball tip. Chicken tongue shankle, shoulder sirloin ribeye biltong turkey cow.  Brisket hamburger t-bone, ball tip alcatra fatback rump shoulder.</p>
+      </aside>
+    </main>
+    <footer><h3>The End</h3></footer>
+
+  </body>
+</html>
